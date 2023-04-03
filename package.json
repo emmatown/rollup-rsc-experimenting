@@ -1,0 +1,35 @@
+{
+  "name": "@rollup-rsc/repo",
+  "private": true,
+  "packageManager": "pnpm@8.1.0",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "preconstruct dev",
+    "dev": "cd app && pnpm dev"
+  },
+  "dependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@babel/preset-typescript": "^7.21.4",
+    "@jest/globals": "^29.5.0",
+    "@preconstruct/cli": "^2.4.3",
+    "@preconstruct/eslint-plugin-format-js-tag": "^0.3.0",
+    "@typescript-eslint/parser": "^5.57.0",
+    "babel-jest": "^29.5.0",
+    "eslint": "^8.37.0",
+    "jest": "^29.5.0",
+    "prettier": "^2.8.7",
+    "typescript": "^5.0.3"
+  },
+  "preconstruct": {
+    "exports": true,
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "jest": {
+    "transform": {
+      "\\.[jt]sx?$": "babel-jest"
+    }
+  }
+}

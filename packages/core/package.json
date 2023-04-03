@@ -1,0 +1,31 @@
+{
+  "name": "@rollup-rsc/core",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "dist/rollup-rsc-core.cjs.js",
+  "module": "dist/rollup-rsc-core.esm.js",
+  "exports": {
+    ".": {
+      "module": "./dist/rollup-rsc-core.esm.js",
+      "default": "./dist/rollup-rsc-core.cjs.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "dependencies": {
+    "@emotion/weak-memoize": "^0.3.0",
+    "emery": "^1.4.2",
+    "fast-glob": "^3.2.12",
+    "magic-string": "^0.30.0"
+  },
+  "peerDependencies": {
+    "rollup": "3"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@types/signal-exit": "^3.0.1",
+    "outdent": "^0.8.0",
+    "rollup": "^3.20.2",
+    "signal-exit": "^3.0.7",
+    "tempy": "^1.0.1"
+  }
+}

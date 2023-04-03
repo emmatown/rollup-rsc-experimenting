@@ -1,0 +1,7 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@preconstruct/format-js-tag"],
+  "rules": {
+    "@preconstruct/format-js-tag/format": "error"
+  }
+}
